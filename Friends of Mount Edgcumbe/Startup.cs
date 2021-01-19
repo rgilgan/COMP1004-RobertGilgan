@@ -27,6 +27,7 @@ namespace Friends_of_Mount_Edgcumbe
             }
 
             app.UseRouting();
+
             app.UseDefaultFiles();
             app.UseStaticFiles();
           //  app.UseEndpoints(endpoints =>
