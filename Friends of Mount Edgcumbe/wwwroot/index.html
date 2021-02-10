@@ -9,34 +9,46 @@
             integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
             crossorigin="anonymous"></script>
     <script src="js/spa.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-
+xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin="anonymous" />
+   
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-
+XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin="anonymous"></script>
+    <style>
+        #mapid {
+            height: 180px;
+        }
+    </style>
     <title>Friends of Mount Edgcumbe</title>
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a>COMP1004</a>
+        <a>Friends of Mount Edgcumbe</a>
         <a href="#">Home</a>
     </nav>
     <div class="container row">
         <nav class="navbar navbar-dark bg-dark">
             <ul class="navbar-nav flex-column">
                 <li class="nav-item"><a class="nav-link" id="index">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="#" id="map">Map</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="treasure">Treasure Game</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="data">Data</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="map">Map</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="landmark">Landmark Information</a></li>
+                
             </ul>
         </nav>
         <div id="page-content-wrapper" class="col-8 pl-0">
             <div class="jumbotron bg-cover" style="background-image: linear-gradient(to bottom,
-rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(/img/visual-reverse-image-search-v2_intro.jpg)">
+rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url('/img/mount edgcumbe picture 2.jpg')">
                 <div class="container">
                     <h1 class="display-4">Welcome</h1>
                     <p class="lead font-weight-bold">
                         COMP1004 SPA 02
                         4
-                        Welcome to the COMP1004 sample Single Page Application. In this example
-                        we shall load a map, a treasure game and a data chart into this space to illustrate how JQuery
-                        will allow you to provide a rich user experience on one html page.
+                        Welcome to the COMP1004 sample Single Page Application. In this space I will include
+                        basic information about mt edgcumbe, its history and charity work. 
                     </p>
                 </div>
 
@@ -54,7 +66,7 @@ rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url(/img/visual-reverse-im
         </style>
         <footer class="footer">
             <div class="container">
-                <span class="text-muted">Copyright University of Plymouth - for teaching purposes only
+                <span class="text-muted">Placeholder text
                 </span>
             </div>
 
