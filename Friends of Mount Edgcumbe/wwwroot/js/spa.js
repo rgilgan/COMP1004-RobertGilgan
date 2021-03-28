@@ -1,6 +1,10 @@
 ﻿$(document).ready(function () {
-    $('#map').click(function () {
-        $('#page-content-wrapper').load('map.html');
+    $('#mapShort').click(function () {
+        $('#page-content-wrapper').load('mapShort.html');
+    })
+});$(document).ready(function () {
+    $('#mapLong').click(function () {
+        $('#page-content-wrapper').load('mapLong.html');
     })
 });$(document).ready(function () {
     $('#landmark').click(function () {

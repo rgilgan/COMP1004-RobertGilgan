@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Friends of Mount Edgcumbe Map (Short)</title>
+</head>
+<body>
+    <div id="mapShort">
+        <h1>Map of the Mount Edgcumbe Country Park (Short)</h1>
+    </div>
+    <div class="container-fluid row">
+        <div class="card mt-3 col-md-4">
+            <h2>Landmarks</h2>
+            <p class="lead font-weight-bold">On this map you will see a marker for each of the landmarks present on the Mount Edgcumbe grounds. 
+            Should you wish to learn more about a particular landmark please click the marker.</p>
+        </div>
+        <div class="card mt-3 col-md-6">
+            <div id="mapid" style="width: 600px; height: 400px;"></div>
+            <script>
+                var mymap = L.map('mapid').setView([50.35430611566085, -4.175929796232053], 13);
+
+                L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}'
+ , {
+ attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+ tileSize: 512,
+maxZoom: 18,
+zoomOffset: -1,
+     id: 'mapbox/streets-v11',
+     accessToken: 'pk.eyJ1IjoibGVlcnBnYmFpIiwiYSI6ImNrazVxYndtMDBkOWgybm8wMjYzOHAzbnIifQ.zpAMdUIkIRKlSLg5C1WWZQ'
+ }).addTo(mymap);
+                var marker = L.marker([50.35430611566085, -4.175929796232053]).addTo(mymap).bindPopup("<b>Mount Edgcumbe House</b></br> Enter description here").openPopup();
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>
