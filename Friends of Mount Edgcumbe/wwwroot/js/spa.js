@@ -11,7 +11,7 @@
         $('#page-content-wrapper').load('landmark.html');
     })
 });$(document).ready(function () {
-    $('#data').click(function () {
-        $('#page-content-wrapper').load('data.html');
+    $('#aboutUs').click(function () {
+        $('#page-content-wrapper').load('aboutUs.html');
     })
 });
