@@ -6,13 +6,76 @@
 </head>
 <body>
     <div id="mapShort">
-        <h1>Map of the Mount Edgcumbe Country Park (Short)</h1>
+        <h1>Map of the Mount Edgcumbe Country Park Short Walk</h1>
     </div>
     <div class="container-fluid row">
-        <div class="card mt-3 col-md-4">
-            <h2>Landmarks</h2>
-            <p class="lead font-weight-bold">On this map you will see a marker for each of the landmarks present on the Mount Edgcumbe grounds. 
-            Should you wish to learn more about a particular landmark please click the marker.</p>
+        <div class="card mt-3 col-md-4" style=" height: 400px; overflow-y: scroll;">
+            <h2>Guide</h2>
+            <p class="lead font-weight-bold">
+                Leaving Lambert Lodge, walk through the formal
+                gardens to view items 1 – 5.
+                Enter the <b>Italian Garden (1)</b> where the Friends have
+                sponsored the bedding and the orange trees and
+                funded the repairs to the statues on the Belvedere.
+                Pass in front of the Orangery and on reaching the
+                grass, cut across to enter the <b>
+                    Golden Jubilee
+                    Garden (2)
+                </b> with its sound sculpture.
+                Detour to the left to view the <b>Black Bee apiary (3)</b>
+                and then retrace your steps to continue through
+                the Silver Jubilee Garden.
+                Turn left around the French conservatory into the
+                <b>French Garden (4)</b> where the Friends have
+                sponsored the bedding and repaired both the
+                fountain and the conservatory.
+                At the far end of the French Garden turn right and
+                right again into the <b>Relic Garden (5)</b> which was
+                totally funded by the Friends.
+                After leaving the Relic Garden, turn left and left
+                again to leave the formal gardens as indicated on
+                the map.
+
+                After visiting the Relic Garden continue through the
+                hedge towards the sea and turn right, leaving the
+                formal gardens.
+                Continue across Barn Pool and pick up the coastal
+                path towards the duck pond.
+                At the duck pond, stay on the
+                concrete track as it winds
+                its way up through the
+                amphitheatre, noticing
+                <b>The New Trees (6)</b> that
+                were planted in 2020.
+
+                At the T-junction,
+                for the short walk (1.25km),
+                turn right and
+                follow the path
+                back up to the house
+                where you can visit
+                items 10 – 16.
+
+                The <b>Barrow Centre (10)</b> was developed with help
+                from the Friends and now houses retail outlets and
+                The Farriers for food and drink.
+                Take a look at the <b>Batcam (11)</b> which was funded
+                by the Friends, as well as the <b>Fire Auxiliary (12)</b> and
+                assorted memorabilia from old fire stations. When
+                you have finished wandering around the Barrow
+                Centre, leave in the direction of the house, passing
+                the <b>Deer Garden (13)</b> on your way.
+                Passing through the arch, turn right towards the
+                house, through the <b>Knot Garden (14)</b>.
+                If the house is open, visit the Earl’s Garden and look
+                at the <b>Cedar Seat (15)</b> and <b>Shell Seat (16)</b>. Note:
+                entrance fee payable except for members of the
+                Friends.
+                When you have finished, work your way back down
+                the hill to <b>Lambert Lodge (17)</b>, passing the
+                children’s play area by <b>Cremyll Gate (18)</b> which was
+                built with the Friends’ help.
+            </p>
         </div>
         <div class="card mt-3 col-md-6">
             <div id="mapid" style="width: 600px; height: 400px;"></div>
@@ -28,7 +91,14 @@ zoomOffset: -1,
      id: 'mapbox/streets-v11',
      accessToken: 'pk.eyJ1IjoibGVlcnBnYmFpIiwiYSI6ImNrazVxYndtMDBkOWgybm8wMjYzOHAzbnIifQ.zpAMdUIkIRKlSLg5C1WWZQ'
  }).addTo(mymap);
-                var marker = L.marker([50.35430611566085, -4.175929796232053]).addTo(mymap).bindPopup("<b>Mount Edgcumbe House</b></br> Enter description here").openPopup();
+                var marker = L.marker([50.35871163181026, -4.174050516874687]).addTo(mymap).bindPopup("<b>The Italian Garden</b></br>(1)").openPopup();                var marker = L.marker([50.35838537844191, -4.173318985600351]).addTo(mymap).bindPopup("<b>The Jubilee Garden</b></br>(2)").openPopup();
+                var marker = L.marker([50.35841463892388, -4.172250353723466]).addTo(mymap).bindPopup("<b>The Cornish Black Bee Apiary</b></br>(3)").openPopup();                var marker = L.marker([50.35816299817656, -4.172830533686558]).addTo(mymap).bindPopup("<b>The French Garden</b></br>(4)").openPopup();
+                var marker = L.marker([50.35805180765723, -4.17299335098891]).addTo(mymap).bindPopup("<b>The Relic Garden</b></br>(5)").openPopup();                var marker = L.marker([50.355139784965004, -4.172774637629259]).addTo(mymap).bindPopup("<b>The New Trees</b></br>(6)").openPopup();
+                var marker = L.marker([50.35379157589389, -4.177669483622029]).addTo(mymap).bindPopup("<b>The Barrow Centre</b></br>(10)").openPopup();                var marker = L.marker([50.353927998075115, -4.177403956796543]).addTo(mymap).bindPopup("<b>The Batcam</b></br>(11)").openPopup();
+                var marker = L.marker([50.35405553208184, -4.177145582521155]).addTo(mymap).bindPopup("<b>The Fire Auxiliary</b></br>(12)").openPopup();                var marker = L.marker([50.354287436208985, -4.176841099213955]).addTo(mymap).bindPopup("<b>The Deer Garden</b></br>(13)").openPopup();
+                var marker = L.marker([50.35436900674759, -4.176397916295431]).addTo(mymap).bindPopup("<b>The Knot Garden</b></br>(14)").openPopup();                var marker = L.marker([50.35384558905141, -4.175775975574684]).addTo(mymap).bindPopup("<b>The Cedar Seat</b></br>(15)").openPopup();
+                var marker = L.marker([50.353701548123894, -4.176195541774148]).addTo(mymap).bindPopup("<b>The Shell Seat</b></br>(16)").openPopup();                var marker = L.marker([50.359223464913995, -4.174346744168669]).addTo(mymap).bindPopup("<b>Lambert Lodge</b></br>(17)").openPopup();
+                var marker = L.marker([50.359489562352984, -4.175721211687491]).addTo(mymap).bindPopup("<b>Cremyll Gate and Play Area</b></br>(18)").openPopup();                
             </script>
         </div>
     </div>

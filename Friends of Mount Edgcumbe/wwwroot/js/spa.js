@@ -6,11 +6,7 @@
     $('#mapLong').click(function () {
         $('#page-content-wrapper').load('mapLong.html');
     })
-});$(document).ready(function () {
-    $('#landmark').click(function () {
-        $('#page-content-wrapper').load('landmark.html');
-    })
-});$(document).ready(function () {
+});$(document).ready(function () {
     $('#aboutUs').click(function () {
         $('#page-content-wrapper').load('aboutUs.html');
     })
